@@ -1,6 +1,6 @@
 {
     "name": "softcommerce/module-core",
-    "description": "",
+    "description": "SoftCommerce Core - Global functionalities for bundled modules",
     "require": {
         "php": "~7.3.0||~7.4.0",
         "magento/magento-composer-installer": "*"
