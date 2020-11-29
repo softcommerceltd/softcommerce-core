@@ -1,0 +1,7 @@
+#menu-softcommerce-core-core > a:before {
+    content: '';
+    background-image: url(../images/logo-s-menu.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

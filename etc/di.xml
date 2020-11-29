@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+ ~ Copyright © Soft Commerce Ltd. All rights reserved.
+ ~ See LICENSE.txt for license details.
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- CLI -->
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="global_sku_generator" xsi:type="object">SoftCommerce\Core\Console\Command\ProductGlobalSkuGenerator</item>
+                <item name="product_tax_provider" xsi:type="object">SoftCommerce\Core\Console\Command\ProductTaxProvider</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
