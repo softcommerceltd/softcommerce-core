@@ -1,7 +1,5 @@
 # Magento - SoftCommerce
-Magento :: SoftCommerce Core Module
-
-Global Functionality for bundle modules.
+Global Functionalities for bundle modules.
 
 ## Requirements
 * [Magento 2.4](https://magento.com/tech-resources/download).
@@ -14,7 +12,7 @@ Global Functionality for bundle modules.
 * Login to your magento server and move to magento's app/code directory
 `cd app/code && mkdir SoftCommerce && cd SoftCommerce && mkdir Core` to create new directory app/code/SoftCommerce/Core
 * Upload contents to app/code/SoftCommerce/Core directory.
-* Move back to your magento root directory and execute the following commands
+* Move back to your magento root directory and execute "Post Install" commands described bellow.
 
 ### Install via composer
 
