@@ -6,7 +6,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
         <add id="SoftCommerce_Core::core"
-             title="Wills"
+             title="Soft Commerce"
              translate="title"
              module="SoftCommerce_Core"
              sortOrder="71"
