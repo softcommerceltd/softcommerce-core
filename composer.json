@@ -21,13 +21,5 @@
         "psr-4": {
             "SoftCommerce\\Core\\": ""
         }
-    },
-    "extra": {
-        "map": [
-            [
-                "*",
-                "SoftCommerce/Core"
-            ]
-        ]
     }
 }
