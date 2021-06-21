@@ -10,36 +10,15 @@
         </tab>
         <section id="softcommerce_core" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
-            <label>Core Settings</label>
+            <label>SoftCommerce Core</label>
             <tab>softcommerce_tab</tab>
-            <resource>SoftCommerce_Core::softcommerce_core_config</resource>
+            <resource>SoftCommerce_Core::core_config</resource>
             <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General</label>
-                <field id="version" type="note" translate="label" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="version" type="note" translate="label" sortOrder="1" showInDefault="1">
                     <label>Version</label>
                     <frontend_model>SoftCommerce\Core\Block\Adminhtml\System\Config\Form\Field\Version</frontend_model>
                     <comment>Current module version</comment>
-                </field>
-                <field id="license" translate="label comment" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="0">
-                    <label>License</label>
-                    <config_path>softcommerce_core/general/license</config_path>
-                    <comment>This is provided with your invoice.</comment>
-                </field>
-            </group>
-            <group id="dev" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="0" showInStore="0">
-                <label>Enable Debugging</label>
-                <field id="debug_enabled" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
-                    <label>Enable debugging</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment>Enables logging response data to a file.</comment>
-                </field>
-                <field id="debug_print_to_array" translate="label comment" type="select" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
-                    <label>Print data to array</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment>Enables logging request and response data as array. This improves human readability but increases size of the file.</comment>
-                </field>
-                <field id="debug_directory" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="0">
-                    <label>Debug directory name (e.g core)</label>
                 </field>
             </group>
         </section>

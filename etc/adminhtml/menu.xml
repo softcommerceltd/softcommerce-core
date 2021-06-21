@@ -5,27 +5,27 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="SoftCommerce_Core::core"
+        <add id="SoftCommerce_Core::softcommerce_core"
              title="Soft Commerce"
              translate="title"
              module="SoftCommerce_Core"
-             sortOrder="71"
+             sortOrder="20"
              dependsOnModule="SoftCommerce_Core"
-             resource="SoftCommerce_Core::core"/>
+             resource="SoftCommerce_Core::softcommerce_core"/>
         <add id="SoftCommerce_Core::config"
              title="Configuration"
              translate="title"
              module="SoftCommerce_Core"
              sortOrder="10"
-             parent="SoftCommerce_Core::core"
+             parent="SoftCommerce_Core::softcommerce_core"
              resource="SoftCommerce_Core::configuration"/>
-        <add id="SoftCommerce_Core::core_config"
-             title="Core Setting"
+        <add id="SoftCommerce_Core::config_softcommerce_core"
+             title="SoftCommerce Core"
              translate="title"
              module="SoftCommerce_Core"
-             sortOrder="10"
+             sortOrder="0"
              parent="SoftCommerce_Core::config"
              action="adminhtml/system_config/edit/section/softcommerce_core/"
-             resource="SoftCommerce_Core::configuration"/>
+             resource="SoftCommerce_Core::core_configuration"/>
     </menu>
 </config>

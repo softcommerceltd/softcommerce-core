@@ -1,18 +1,15 @@
 {
     "name": "softcommerce/module-core",
-    "description": "SoftCommerce Core - Global functionalities for bundled modules",
+    "description": "Soft Commerce - Core module used in related to vendor modules.",
     "require": {
-        "php": "~7.3.0||~7.4.0",
-        "magento/magento-composer-installer": "*"
+        "php": "~7.2.0||~7.3.0||~7.4.0",
+        "magento/magento-composer-installer": "*",
+        "magento/framework": "^102||^103"
     },
     "suggest": {
-
     },
     "type": "magento2-module",
-    "license": [
-        "OSL-3.0",
-        "AFL-3.0"
-    ],
+    "license": "EULA",
     "autoload": {
         "files": [
             "registration.php"

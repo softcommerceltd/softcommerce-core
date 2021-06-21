@@ -3,6 +3,7 @@
  * Copyright © Soft Commerce Ltd. All rights reserved.
  * See LICENSE.txt for license details.
  */
+
 namespace SoftCommerce\Core\Block\Adminhtml\Widget\Grid\Renderer;
 
 use Magento\Framework\App\ObjectManager;

@@ -3,6 +3,9 @@
  * Copyright © Soft Commerce Ltd. All rights reserved.
  * See LICENSE.txt for license details.
  */
+
+declare(strict_types=1);
+
 namespace SoftCommerce\Core\Block\Adminhtml\System\Config\Form\Field;
 
 use Magento\Backend\Block\Template\Context;
@@ -11,8 +14,8 @@ use Magento\Framework\Data\Form\Element\AbstractElement;
 use Magento\Framework\Module\PackageInfo;
 
 /**
- * Class Version
- * @package SoftCommerce\Core\Block\Adminhtml\System\Config\Form\Field
+ * Class Version used to provide
+ * data about module version
  */
 class Version extends Field
 {
@@ -23,13 +26,13 @@ class Version extends Field
 
     /**
      * Version constructor.
-     * @param Context $context
      * @param PackageInfo $packageInfo
+     * @param Context $context
      * @param array $data
      */
     public function __construct(
-        Context $context,
         PackageInfo $packageInfo,
+        Context $context,
         array $data = []
     ) {
         $this->packageInfo = $packageInfo;
@@ -37,8 +40,7 @@ class Version extends Field
     }
 
     /**
-     * @param AbstractElement $element
-     * @return string
+     * @inheritdoc
      */
     protected function _getElementHtml(AbstractElement $element)
     {

@@ -1,7 +1,7 @@
 ## Changelog
 
 ### Version 1.0.1
-- **Fix**: Changes to composer.json
+- **Feature**: Added data storage including output filters to framework.
 
 ### Version 1.0.0
-- **Feature**: Added global functionality for bundled modules.
+- **Feature**: Global functionality for dependant modules.

@@ -4,13 +4,17 @@
  ~ See LICENSE.txt for license details.
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <!-- CLI -->
-    <type name="Magento\Framework\Console\CommandListInterface">
-        <arguments>
-            <argument name="commands" xsi:type="array">
-                <item name="global_sku_generator" xsi:type="object">SoftCommerce\Core\Console\Command\ProductGlobalSkuGenerator</item>
-                <item name="product_tax_provider" xsi:type="object">SoftCommerce\Core\Console\Command\ProductTaxProvider</item>
-            </argument>
-        </arguments>
-    </type>
+    <!-- global framework interfaces :: data storage-->
+    <preference for="SoftCommerce\Core\Framework\DataStorageInterface" type="SoftCommerce\Core\Framework\DataStorage"/>
+    <preference for="SoftCommerce\Core\Framework\DataStorage\OutputArrayInterface" type="SoftCommerce\Core\Framework\DataStorage\OutputArray"/>
+    <preference for="SoftCommerce\Core\Framework\DataStorage\OutputHtmlInterface" type="SoftCommerce\Core\Framework\DataStorage\OutputHtml"/>
+    <preference for="SoftCommerce\Core\Framework\DataStorage\OutputMessageManagerInterface" type="SoftCommerce\Core\Framework\DataStorage\OutputMessageManager"/>
+    <preference for="SoftCommerce\Core\Framework\DataStorage\StatusPredictionInterface" type="SoftCommerce\Core\Framework\DataStorage\StatusPrediction"/>
+    <!-- global framework interfaces :: message storage -->
+    <preference for="SoftCommerce\Core\Framework\MessageStorageInterface" type="SoftCommerce\Core\Framework\MessageStorage"/>
+    <preference for="SoftCommerce\Core\Framework\MessageStorage\OutputArrayInterface" type="SoftCommerce\Core\Framework\MessageStorage\OutputArray"/>
+    <preference for="SoftCommerce\Core\Framework\MessageStorage\OutputConsoleInterface" type="SoftCommerce\Core\Framework\MessageStorage\OutputConsole"/>
+    <preference for="SoftCommerce\Core\Framework\MessageStorage\OutputHtmlInterface" type="SoftCommerce\Core\Framework\MessageStorage\OutputHtml"/>
+    <preference for="SoftCommerce\Core\Framework\MessageStorage\OutputMessageManagerInterface" type="SoftCommerce\Core\Framework\MessageStorage\OutputMessageManager"/>
+    <preference for="SoftCommerce\Core\Framework\MessageStorage\StatusPredictionInterface" type="SoftCommerce\Core\Framework\MessageStorage\StatusPrediction"/>
 </config>

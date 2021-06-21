@@ -3,6 +3,7 @@
  * Copyright © Soft Commerce Ltd. All rights reserved.
  * See LICENSE.txt for license details.
  */
+
 namespace SoftCommerce\Core\Model\System\Config\Backend;
 
 use Magento\Framework\App\ObjectManager;
